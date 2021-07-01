@@ -1,0 +1,60 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    height: calc(100vh - 165px);
+    background:  rgb(170, 221, 250);
+    input{
+        width: 100px;
+        height: 30px;
+        margin: 20px;
+        text-align: center;
+        background: rgb(255, 255, 227);
+        border: 1px solid rgb(101, 77, 122);
+    }
+    input::placeholder{
+        color: rgb(101, 77, 122);
+        font-style: italic;
+    }
+    &__result{
+        margin: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color:rgb(35, 27, 41)
+    }
+    &__buttons{
+        margin: 20px;
+    }
+    &__buttons-child{
+        margin: 10px 10px;
+        background: rgb(35, 27, 41);
+        border: 0;
+        border-radius: 3px;
+        width: 45px;
+        height: 25px;
+        color: rgb(255, 254, 187);
+        transition: all 150ms ease-in-out;
+    }
+    &__buttons-child:hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow: 0 0 5px 0 rgb(101, 77, 122) inset, 0 0 5px 4px rgb(101, 77, 122);
+    }
+}
+
+.main-dark{
+    background: rgb(101, 77, 122);
+}
+.main-light{
+    background:  rgb(170, 221, 250);
+}
+.button-light{
+    background: rgb(101, 77, 122);
+    color: rgb(255, 254, 187);
+}
+.button-dark{
+    background: rgb(170, 221, 250);
+    color: rgb(35, 27, 41);
+}

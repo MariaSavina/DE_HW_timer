@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: rgb(35, 27, 41);
+    &__info{
+        display: flex;
+        align-items: center;
+
+    }
+    h2{
+        color: rgb(170, 221, 250);
+        font-style: italic;
+    }
+    select{
+        background-color: rgb(255, 255, 227);
+    }
+}
